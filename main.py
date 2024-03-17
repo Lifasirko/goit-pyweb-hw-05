@@ -84,7 +84,7 @@ if __name__ == "__main__":
         curr = change_base_currency()
     if len(sys.argv) < 2:
         current_file_path = os.path.abspath(__file__)
-        days_from_now = int(input(f"Usage: python {current_file_path} <number_of_days>"))
+        days_from_now = int(input(f"Usage: python {current_file_path} <number_of_days> <choose_another_currency>"))
         if platform.system() == 'Windows':
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
         print(asyncio.run(pb_ex(days_from_now, curr, 1)))
